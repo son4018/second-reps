@@ -12,7 +12,7 @@ void main() {
           ),
           backgroundColor: Colors.red,
         ),
-        body: DicePage(),
+        body: const DicePage(),
       ),
     ),
   );
@@ -67,8 +67,8 @@ class _DicePageState extends State<DicePage> {
         Center(
           child: Column(
             children: [Text(
-              '$total',
-              style: TextStyle(
+              total,
+              style: const TextStyle(
                 fontSize: 30.0
               )
             )],
@@ -109,6 +109,7 @@ class _DicePageState extends State<DicePage> {
       total = 'TIED';
     }
     }
+    // ignore: non_constant_identifier_names
     void Reset(){
     total = '';
     }
